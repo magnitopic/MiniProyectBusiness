@@ -11,15 +11,28 @@
         android:id="@+id/headRelative"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight=".26">
+        android:layout_weight=".26"
+        android:background="@color/black">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:srcCompat="@drawable/Jaawa"
+            android:alpha="0.5"
+            android:contentDescription="@string/imageDescription"
             android:scaleType="centerCrop"
-            android:contentDescription="@string/imageDescription"/>
+            tools:srcCompat="@drawable/Jaawa" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Midiclorianos"
+            android:textColor="@color/white" />
+
+
     </RelativeLayout>
 
     <RelativeLayout
