@@ -1,4 +1,15 @@
 <resources>
-    <string name="app_name">MiniProyectBusiness</string>
+    <string name="app_name">Midiclorianos</string>
     <string name="imageDescription">Transporte siendo cargado por Jawas</string>
+    <string name="description">La mayor empresa de transporte de mercancías de toda la galaxia. Operamos a nivel interplanetario e intergaláctico.</string>
+    <string name="descriptionIcon">icono descripción del negocia</string>
+    <string name="telf">+34 646 26 58 52</string>
+    <string name="descriptionTelf">icono telefono</string>
+    <string name="descriptionDirec">icono dirección</string>
+    <string name="direc">Calle Donoso Cortés, 61, 28015 - Madrid</string>
+    <string name="time">Abierto las 24h del ciclo solar</string>
+    <string name="descriptionTime">icono horario</string>
+    <string name="descriptionEmail">icon email</string>
+    <string name="email">info@centronelson.org</string>
+    <string name="web">www.magnitopic.com</string>
 </resources>

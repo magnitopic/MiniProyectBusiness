@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:id="@+id/mainRelative"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#c5c5c5">
 
     <RelativeLayout
         android:id="@+id/headRelative"
@@ -21,35 +22,180 @@
             android:alpha="0.5"
             android:contentDescription="@string/imageDescription"
             android:scaleType="centerCrop"
-            tools:srcCompat="@drawable/Jaawa" />
+            tools:srcCompat="@drawable/Jawa" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:layout_marginBottom="10dp"
-            android:text="Midiclorianos"
-            android:textColor="@color/white" />
-
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/app_name"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
 
     </RelativeLayout>
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/contentRelative"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight=".64">
+        android:layout_weight=".64"
+        android:orientation="vertical"
+        android:background="#fff">
 
-    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/desc"
+            android:padding="6dp">
 
-    <RelativeLayout
+            <ImageView
+                android:id="@+id/descIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                tools:srcCompat="@drawable/store"
+                android:contentDescription="@string/descriptionIcon"/>
+
+            <TextView
+                android:id="@+id/descText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:layout_toEndOf="@+id/descIcon"
+                android:layout_marginStart="5dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/direc"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/direcIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                tools:srcCompat="@drawable/location"
+                android:contentDescription="@string/descriptionDirec" />
+
+            <TextView
+                android:id="@+id/direcText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/direc"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/direcIcon"
+                android:layout_marginStart="5dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/timeIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                tools:srcCompat="@drawable/clock"
+                android:contentDescription="@string/descriptionTime"/>
+
+            <TextView
+                android:id="@+id/timeDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/timeIcon"
+                android:layout_marginStart="5dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/emailIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                tools:srcCompat="@drawable/email"
+                android:contentDescription="@string/descriptionEmail"/>
+
+            <TextView
+                android:id="@+id/emailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/emailIcon"
+                android:layout_marginStart="5dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/web"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/webIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                tools:srcCompat="@drawable/website"
+                android:contentDescription="@string/descriptionIcon"/>
+
+            <TextView
+                android:id="@+id/webText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/web"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/webIcon"
+                android:layout_marginStart="5dp"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/phoneRelative"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight=".1">
+        android:layout_weight=".1"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:background="#fff"
+        android:orientation="vertical">
 
-    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/telf"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/telfIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                tools:srcCompat="@drawable/phone"
+                android:contentDescription="@string/descriptionIcon"/>
+
+            <TextView
+                android:id="@+id/telfText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/telf"
+                android:layout_toEndOf="@+id/telfIcon"
+                android:layout_marginStart="5dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
 
 
 </LinearLayout>
