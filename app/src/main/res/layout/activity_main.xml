@@ -12,7 +12,7 @@
         android:id="@+id/headRelative"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight=".26"
+        android:layout_weight=".3"
         android:background="@color/black">
 
         <ImageView
@@ -22,10 +22,10 @@
             android:alpha="0.5"
             android:contentDescription="@string/imageDescription"
             android:scaleType="centerCrop"
-            tools:srcCompat="@drawable/Jawa" />
+            tools:srcCompat="@drawable/jawa" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -42,15 +42,16 @@
         android:id="@+id/contentRelative"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight=".64"
+        android:layout_weight=".6"
         android:orientation="vertical"
         android:background="#fff">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".24"
             android:id="@+id/desc"
-            android:padding="6dp">
+            android:padding="10dp">
 
             <ImageView
                 android:id="@+id/descIcon"
@@ -60,6 +61,7 @@
                 android:contentDescription="@string/descriptionIcon"/>
 
             <TextView
+                android:textSize="16sp"
                 android:id="@+id/descText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -70,9 +72,10 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".19"
             android:id="@+id/direc"
-            android:padding="6dp">
+            android:padding="10dp">
 
             <ImageView
                 android:id="@+id/direcIcon"
@@ -82,6 +85,7 @@
                 android:contentDescription="@string/descriptionDirec" />
 
             <TextView
+                android:textSize="16sp"
                 android:id="@+id/direcText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -93,9 +97,10 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".19"
             android:id="@+id/time"
-            android:padding="6dp">
+            android:padding="10dp">
 
             <ImageView
                 android:id="@+id/timeIcon"
@@ -105,6 +110,7 @@
                 android:contentDescription="@string/descriptionTime"/>
 
             <TextView
+                android:textSize="16sp"
                 android:id="@+id/timeDesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -116,9 +122,10 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".19"
             android:id="@+id/email"
-            android:padding="6dp">
+            android:padding="10dp">
 
             <ImageView
                 android:id="@+id/emailIcon"
@@ -128,6 +135,7 @@
                 android:contentDescription="@string/descriptionEmail"/>
 
             <TextView
+                android:textSize="16sp"
                 android:id="@+id/emailText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -139,9 +147,10 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".19"
             android:id="@+id/web"
-            android:padding="6dp">
+            android:padding="10dp">
 
             <ImageView
                 android:id="@+id/webIcon"
@@ -151,6 +160,7 @@
                 android:contentDescription="@string/descriptionIcon"/>
 
             <TextView
+                android:textSize="16sp"
                 android:id="@+id/webText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -171,13 +181,14 @@
         android:layout_marginTop="7dp"
         android:layout_marginBottom="7dp"
         android:background="#fff"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/telf"
-            android:padding="6dp">
+            android:padding="10dp">
 
             <ImageView
                 android:id="@+id/telfIcon"
@@ -187,6 +198,7 @@
                 android:contentDescription="@string/descriptionIcon"/>
 
             <TextView
+                android:textSize="16sp"
                 android:id="@+id/telfText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
