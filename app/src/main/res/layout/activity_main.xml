@@ -23,7 +23,7 @@
             android:alpha="0.5"
             android:contentDescription="@string/imageDescription"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/jawa" />
+            app:srcCompat="@drawable/jawa_small" />
 
         <TextView
             android:id="@+id/mainTitle"
@@ -94,6 +94,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/direc"
                 android:layout_marginTop="5dp"
+                android:contentDescription="@string/descriptionDirec"
                 android:layout_toEndOf="@+id/direcIcon"
                 android:layout_marginStart="5dp"/>
         </RelativeLayout>
@@ -191,7 +192,7 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/phone"
             android:contentDescription="@string/descriptionIcon"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="9dp"/>
 
         <TextView
