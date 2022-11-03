@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,7 +13,7 @@
         android:id="@+id/headRelative"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight=".3"
+        android:layout_weight=".33"
         android:background="@color/black">
 
         <ImageView
@@ -22,7 +23,7 @@
             android:alpha="0.5"
             android:contentDescription="@string/imageDescription"
             android:scaleType="centerCrop"
-            tools:srcCompat="@drawable/Jawa" />
+            app:srcCompat="@drawable/jawa" />
 
         <TextView
             android:id="@+id/mainTitle"
@@ -56,10 +57,11 @@
 
             <ImageView
                 android:id="@+id/descIcon"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                tools:srcCompat="@drawable/store"
-                android:contentDescription="@string/descriptionIcon"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/store"
+                android:contentDescription="@string/descriptionIcon"
+                android:layout_marginTop="14dp"/>
 
             <TextView
                 android:textSize="16sp"
@@ -78,12 +80,12 @@
             android:id="@+id/direc"
             android:padding="10dp">
 
+
             <ImageView
                 android:id="@+id/direcIcon"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                tools:srcCompat="@drawable/location"
-                android:contentDescription="@string/descriptionDirec" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/location" />
 
             <TextView
                 android:textSize="16sp"
@@ -105,9 +107,9 @@
 
             <ImageView
                 android:id="@+id/timeIcon"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                tools:srcCompat="@drawable/clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/clock"
                 android:contentDescription="@string/descriptionTime"/>
 
             <TextView
@@ -130,9 +132,9 @@
 
             <ImageView
                 android:id="@+id/emailIcon"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                tools:srcCompat="@drawable/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/email"
                 android:contentDescription="@string/descriptionEmail"/>
 
             <TextView
@@ -155,9 +157,9 @@
 
             <ImageView
                 android:id="@+id/webIcon"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                tools:srcCompat="@drawable/website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/website"
                 android:contentDescription="@string/descriptionIcon"/>
 
             <TextView
@@ -174,41 +176,34 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/phoneRelative"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight=".1"
-        android:layout_marginTop="7dp"
-        android:layout_marginBottom="7dp"
+        android:layout_weight=".07"
         android:background="#fff"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:id="@+id/telf"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/telfIcon"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/telf"
-            android:padding="10dp">
+            app:srcCompat="@drawable/phone"
+            android:contentDescription="@string/descriptionIcon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="9dp"/>
 
-            <ImageView
-                android:id="@+id/telfIcon"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                tools:srcCompat="@drawable/phone"
-                android:contentDescription="@string/descriptionIcon"/>
-
-            <TextView
-                android:textSize="16sp"
-                android:id="@+id/telfText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/telf"
-                android:layout_toEndOf="@+id/telfIcon"
-                android:layout_marginStart="5dp"/>
-        </RelativeLayout>
-
-    </LinearLayout>
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/telfText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/telf"
+            android:layout_toEndOf="@+id/telfIcon"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="13dp"/>
+    </RelativeLayout>
 
 
 </LinearLayout>
