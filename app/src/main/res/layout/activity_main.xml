@@ -50,7 +50,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight=".24"
+            android:layout_weight="1"
             android:layout_marginTop="15dp"
             android:id="@+id/desc"
             android:padding="10dp">
@@ -61,7 +61,7 @@
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/store"
                 android:contentDescription="@string/descriptionIcon"
-                android:layout_marginTop="14dp"/>
+                android:layout_centerVertical="true"/>
 
             <TextView
                 android:textSize="16sp"
@@ -70,13 +70,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/description"
                 android:layout_toEndOf="@+id/descIcon"
-                android:layout_marginStart="5dp"/>
+                android:layout_marginStart="5dp"
+                android:layout_centerVertical="true"/>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight=".19"
+            android:layout_weight="1"
             android:id="@+id/direc"
             android:padding="10dp">
 
@@ -85,7 +86,8 @@
                 android:id="@+id/direcIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/location" />
+                app:srcCompat="@drawable/location"
+                android:layout_centerVertical="true"/>
 
             <TextView
                 android:textSize="16sp"
@@ -96,13 +98,14 @@
                 android:layout_marginTop="5dp"
                 android:contentDescription="@string/descriptionDirec"
                 android:layout_toEndOf="@+id/direcIcon"
-                android:layout_marginStart="5dp"/>
+                android:layout_marginStart="5dp"
+                android:layout_centerVertical="true"/>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight=".19"
+            android:layout_weight="1"
             android:id="@+id/time"
             android:padding="10dp">
 
@@ -111,7 +114,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/clock"
-                android:contentDescription="@string/descriptionTime"/>
+                android:contentDescription="@string/descriptionTime"
+                android:layout_centerVertical="true"/>
 
             <TextView
                 android:textSize="16sp"
@@ -121,13 +125,14 @@
                 android:text="@string/time"
                 android:layout_marginTop="5dp"
                 android:layout_toEndOf="@+id/timeIcon"
-                android:layout_marginStart="5dp"/>
+                android:layout_marginStart="5dp"
+                android:layout_centerVertical="true"/>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight=".19"
+            android:layout_weight="1"
             android:id="@+id/email"
             android:padding="10dp">
 
@@ -136,7 +141,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/email"
-                android:contentDescription="@string/descriptionEmail"/>
+                android:contentDescription="@string/descriptionEmail"
+                android:layout_centerVertical="true"/>
 
             <TextView
                 android:textSize="16sp"
@@ -146,13 +152,14 @@
                 android:text="@string/email"
                 android:layout_marginTop="5dp"
                 android:layout_toEndOf="@+id/emailIcon"
-                android:layout_marginStart="5dp"/>
+                android:layout_marginStart="5dp"
+                android:layout_centerVertical="true"/>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight=".19"
+            android:layout_weight="1"
             android:id="@+id/web"
             android:padding="10dp">
 
@@ -161,7 +168,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/website"
-                android:contentDescription="@string/descriptionIcon"/>
+                android:contentDescription="@string/descriptionIcon"
+                android:layout_centerVertical="true"/>
 
             <TextView
                 android:textSize="16sp"
@@ -171,7 +179,8 @@
                 android:text="@string/web"
                 android:layout_marginTop="5dp"
                 android:layout_toEndOf="@+id/webIcon"
-                android:layout_marginStart="5dp"/>
+                android:layout_marginStart="5dp"
+                android:layout_centerVertical="true"/>
         </RelativeLayout>
 
 
@@ -193,7 +202,7 @@
             app:srcCompat="@drawable/phone"
             android:contentDescription="@string/descriptionIcon"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="9dp"/>
+            android:layout_centerVertical="true"/>
 
         <TextView
             android:textSize="16sp"
@@ -203,7 +212,7 @@
             android:text="@string/telf"
             android:layout_toEndOf="@+id/telfIcon"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="13dp"/>
+            android:layout_centerVertical="true"/>
     </RelativeLayout>
 
 
