@@ -79,6 +79,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:onClick="handler"
             android:padding="10dp">
 
 
@@ -134,6 +135,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:onClick="handler"
             android:padding="10dp">
 
             <ImageView
@@ -161,6 +163,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:onClick="handler"
             android:padding="10dp">
 
             <ImageView
@@ -193,7 +196,8 @@
         android:layout_marginTop="7dp"
         android:layout_marginBottom="7dp"
         android:layout_weight=".07"
-        android:background="#fff">
+        android:background="#fff"
+        android:onClick="handler">
 
         <ImageView
             android:id="@+id/telfIcon"

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Midiclorianos</string>
+    <string name="app_name">midiclorianos</string>
     <string name="imageDescription">Transporte siendo cargado por Jawas</string>
     <string name="description">La mayor empresa de transporte de mercancías de toda la galaxia. Operamos a nivel interplanetario e intergaláctico.</string>
     <string name="descriptionIcon">icono descripción del negocia</string>
