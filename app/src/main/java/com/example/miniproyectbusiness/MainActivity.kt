@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         when (vista.id) {
             R.id.web -> openWebPage("https://magnitopic.com")
             R.id.email -> composeEmail(arrayOf("info@centronelson.org"))
-            R.id.direc -> showMap("geo: 40.4, -3.7".toUri())
+            R.id.direc -> showMap("geo: 40.436389, -3.714540".toUri())
             R.id.telf -> dialPhoneNumber("646265852")
         }
     }
